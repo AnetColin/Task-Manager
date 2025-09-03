@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Task Manager & Progress Tracker</h1>
+  <hr>
+<br>
+
+  <form id="task-form">
+    <input type="text" id="task-title" placeholder="Task Title" required>
+    <input type="date" id="task-deadline" required>
+    <button type="submit">Add Task</button>
+  </form>
+
+  <div id="task-list"></div>
+<br>
+<br>
+<br>
+  <div id="progress">
+    <h3><p>Progress: <span id="progress-percent">0%</span></p></h3>
+    <div id="progress-bar"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
